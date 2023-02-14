@@ -48,6 +48,15 @@ namespace CarLotSimulator
             car3.HonkNoise = "meep";
 
             myCarlot.ListOfCars.Add(car3);
+
+            foreach (var car in myCarlot.ListOfCars) 
+            {
+                Console.WriteLine($"Year: {car.Year} Make: {car.Make} Model: {car.Model}");
+                car.MakeEngineNoise(car.EngineNoise);
+                car.MakeHonkNoise();
+                Console.WriteLine();
+                Console.WriteLine();
+            }
             //*************BONUS*************//
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
