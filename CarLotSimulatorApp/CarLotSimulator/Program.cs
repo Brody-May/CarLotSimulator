@@ -28,6 +28,9 @@ namespace CarLotSimulator
             car1.HonkNoise = "beep";
 
             myCarlot.ListOfCars.Add(car1);
+            Console.WriteLine($"You have {CarLot.numberOfCars} cars");
+            Console.WriteLine();
+            Console.WriteLine();
 
             var car2 = new Car();
             car2.Make = "Ford";
@@ -38,6 +41,9 @@ namespace CarLotSimulator
             car2.HonkNoise = "weep";
 
             myCarlot.ListOfCars.Add(car2);
+            Console.WriteLine($"You have {CarLot.numberOfCars} cars");
+            Console.WriteLine();
+            Console.WriteLine();
 
             var car3 = new Car();
             car3.Make = "BMW";
@@ -48,6 +54,10 @@ namespace CarLotSimulator
             car3.HonkNoise = "meep";
 
             myCarlot.ListOfCars.Add(car3);
+            Console.WriteLine($"You have {CarLot.numberOfCars} cars");
+            Console.WriteLine();
+            Console.WriteLine();
+
 
             foreach (var car in myCarlot.ListOfCars) 
             {
